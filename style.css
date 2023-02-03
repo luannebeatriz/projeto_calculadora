@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto mono";
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(140deg, #994853d8, #459b81da);
+  padding: 90px 0;
+}
+
+.calculator {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #000000b7;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.numerosDisplay {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #000000da;
+  color: #ffffffda;
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: 0px 8px 10px #00000080;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.calculator button {
+  background-color: hsla(0, 0%, 0%, 0.623);
+  color: #ffffffda;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 1.5rem;
+  outline: none;
+  /*border: 2px solid rgb(180, 110, 110);
+  */
+  box-shadow: 0px 8px 10px #00000080;
+  /*border-width: 0px;
+  */
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #b14e59d8;
+  color: #ffffffda;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+}
